@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <script>
+    var id = location.search.replace('?id=', '')
+    var pathname = location.pathname.replace('/r/', '')
+    var file = location.origin + pathname + '/pdfPreview/web/p/' + id + '.pdf'
+    location.replace('../pdfPreview/web/viewer.html?file=' + encodeURIComponent(file))
+  </script>
+</head>
+<body></body>
+</html>
